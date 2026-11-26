@@ -9,7 +9,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: unzip -q ControleIR.zip
+      - run: unzip -q ControleIR2-1.zip
       - run: cd ControleIR && chmod +x gradlew && ./gradlew assembleRelease
       - uses: actions/upload-artifact@v4
         with:
